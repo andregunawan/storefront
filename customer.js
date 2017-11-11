@@ -21,7 +21,6 @@ function showTable() {
 
 		var table = new Table({
 			head: ['Item Id#', 'Product Name', 'Departement Name', 'Price', 'Stock Qty'],
-			// colWidths: [100, 200]
 		});
 
 		//loops through each item in the mysql database and pushes that information into a new row in the table
@@ -33,8 +32,7 @@ function showTable() {
 		console.log(table.toString());
 
 		if (err) throw err;
-		// console.log(result);
-    	// connection.end();
+
     	  inquirer.prompt([
 
 		    {
@@ -99,7 +97,7 @@ function menu() {
   			connection.end();
   		}
   });	
-}
+};
 
 
 
